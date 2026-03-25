@@ -1,0 +1,160 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+\RequirePackage{cmap}
+\documentclass{res} 
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
+
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{cmap}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+
+\begin{document} 
+
+\name{Sophia Kovaleva\\[12pt]}     % the \\[12pt] adds a blank
+				        % line after name      
+
+\address{Phone: (302) 415-4176\\Email, Google Meet: \href{mailto:sophia.m.kovaleva@gmail.com}{sophia.m.kovaleva@gmail.com}\\GitHub: \href{https://github.com/kosonya/}{https://github.com/kosonya/}}
+
+
+\begin{resume}
+
+\section{SUMMARY}
+
+Looking for: privacy, ML, interpretability, data science, software engineering.\\
+Experience: privacy engineering for Android at Google, ML transparency at Carnegie Mellon, data science at Zugata.
+
+\section{EDUCATION}
+\begin{itemize}
+	\item
+		\underline{Carnegie Mellon University Silicon Valley Campus, July 2013 -- February 2019}\\
+		\begin{itemize}
+			\item
+				Master of Science in Electrical and Computer Engineering
+			\item
+				PhD (unfinished). Advisor: Dr. Anupam Datta, PhD thesis: ``Representation-aware accounting of machine learning models''.
+		\end{itemize}
+	\item
+		Moscow State Institute of Electronics and Mathematics (MIEM), September 2007 -- June 2012\\
+		Engineer degree in Computational Machines, Complexes, Systems and networks\\
+\end{itemize}
+
+\section{SKILLS}          
+\begin{itemize}
+	\item
+		Primary programming language: Python.
+	\item
+		Secondary programming languages: Java, SQL, C++, JS, Haskell, MATLAB, Fortran, \LaTeX{}.
+	\item
+		Building machine learning systems with TensorFlow, Apache Spark, scikit-learn, NumPy.
+	\item
+		Data visualization with matplotlib, GNU Octave, D3.js + Django REST.
+	\item
+		Analysis of privacy risks on mobile devices, especially against local attacks against at-risk users.
+	\item
+		Embedded systems (AVR, ARM), wireless communication.
+\end{itemize}
+ 
+\section{EXPERIENCE}
+
+\vspace{-0.1in}	
+\begin{tabbing}
+\hspace{2in}\= \hspace{2in}\= \kill % set up two tab positions
+{\bf Senior Privacy Engineer} \>Google \>Spring 2019 -- Spring 2025\\
+			\>Mountain View, CA \> 
+\end{tabbing}      % suppress blank line after tabbing
+Duties and projects:
+\begin{itemize}
+	\item
+		Leading the privacy reviews of the Android Vulnerability Reward Program reports.
+	\item
+		Driving strategic long-term privacy improvement initiatives.
+	\item
+		Analyzing backend data to find most problematic or promising areas for privacy improvement.
+	\item
+		Developing and proposing policy changes.
+	\item
+		Reviewing code for potential privacy issues and proposing improvements.
+	\item
+		Consulting, supervision, and review of Android features including Nearby Share and on-device intelligence.
+	\item
+		Driving the effort to limit the accelerometer sampling rate to prevent eavesdropping attacks.
+\item
+		Managing one direct report.
+\end{itemize}
+
+\vspace{-0.1in}	
+\begin{tabbing}
+\hspace{2in}\= \hspace{2in}\= \kill % set up two tab positions
+{\bf PhD Student / RA} \>Carnegie Mellon University \>Fall 2013 -- Spring 2019\\
+			\>Moffett Field, CA \> 
+\end{tabbing}      % suppress blank line after tabbing
+Notable research projects:
+\begin{itemize}
+	\item
+		Room Occupancy Detection in SmartSpace -- using data from wall-mounted physical sensors to estimate the presence and the number of people in rooms.
+	\item
+		Indoor Positioning of Mobile Devices by Combined Wi-Fi and GPS Signals -- improving fingerprinting techniques for indoor positioning using continuous Bayesian classifier.
+	\item
+		Improving Wireless Emergency Alerts -- implementing location-based client-side filtering of broadcast emergency messages to mobile phones to reduce the number of irrelevant messages seen by users, and improve user experience.
+	\item
+		Wireless communication set-up for RSSI broadcast -- building 3D radiation pattens of cellular antennae by interpolating RSSI data collected by a drone-based platform.
+	\item
+		Explaining matrix factorization recommender systems with supervised learning.
+\end{itemize}
+
+\vspace{-0.1in}	
+\begin{tabbing}
+\hspace{2in}\= \hspace{2in}\= \kill % set up two tab positions
+{\bf Data Scienece Intern} \>Zugata, Inc. \>Summer 2015\\
+			\>Palo Alto, CA \> 
+\end{tabbing}      % suppress blank line after tabbing
+Building and analyzing corporate social graphs based on metadata about users' communications. My job involved full stack development with Python/Django in the backend and JS/d3 in the frontend.
+
+\vspace{-0.1in}	
+\begin{tabbing}
+\hspace{2in}\= \hspace{2in}\= \kill % set up two tab positions
+{\bf Technician / TA} \>MIEM / MIEM HSE \>Fall 2010 -- June 2013\\
+			\>Moscow, Russia \> (volunteered from 2008)
+\end{tabbing}      % suppress blank line after tabbing
+Summary for multiple years:
+\begin{itemize}
+	\item
+		Arranging materials and teaching some of the sessions of a programming class to freshmen. Languages: Python, C. Topics: syntax, basic algorithms with lists and strings (Python), developing 2D games using the PyGame library, basic algorithms with arrays, strings and matrices (C), dynamic memory allocation, linked lists, trees and graphs.
+	\item
+		Developing and teaching an applied programming class to sophomores. Language: Python. Topics: Python object model, basic functional programming, multiprocessing, socket network interface, GTK-based GUIs, databases and others.
+\end{itemize}
+
+\section{LANGUAGES SPOKEN}
+\begin{enumerate}
+	\item
+		Russian (native);
+	\item
+		English (114 TOEFL iBT);
+	\item
+		Japanese (JLPT level N4);
+	\item
+		French (basic).
+\end{enumerate}
+ 
+\section{PUBLICATIONS}
+\begin{itemize}
+	\item
+		Datta, A. et al (2018)  Latent Factor Interpretations for Collaborative Filtering, \url{https://arxiv.org/abs/1711.10816}.
+	\item
+		Erdogmus, H. et al (2015) Opportunities, Options, and Enhancements for the Wireless Emergency Alerting Service, Department of Homeland Security, First Responders Group, February 2016.  
+	\item
+		Kovalev, M. (2014) Indoor Positioning of Mobile Devices by Combined Wi-Fi and GPS Signals. \emph{Indoor Positioning and Indoor Navigation (IPIN), 2014 International Conference on}, pp.332-339, 27-30 Oct. 2014, doi: 10.1109/IPIN.2014.7275500
+	\item
+		Kovalev, M. (2013). Testing and the analysis of the perforamce of an algorithm for positioning public transportation vehicles by GSM signal. \emph{Proceedings of the annual scientific and technical conference of undergraduate and graduate students, and young experts of the Moscow State Institute of Electronics and Mathematics, National Research University Higher School of Economics} (pp. 140--141). Moscow, Russia: MIEM NRU HRE Press. ISBN 978-5-94768-066-9.\\
+		(М.М.Ковалев. Испытания и анализ производительности алгоритма позиционирования наземного транспорта по сигналу GSM. Научно-техническая конференция студентов, аспирантов и молодых специалистов МИЭМ НИУ ВШЭ. Тезисы докладов. -- М.: МИЭМ НИУ ВШЭ, 2013. -- 316 с. ISBN 978-5-94768-066-9. с.с. 140--141)
+
+\end{itemize}
+
+
+\end{resume}
+\end{document}
