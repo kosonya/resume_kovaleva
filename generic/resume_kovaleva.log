@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.14)  19 SEP 2025 12:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.6)  6 APR 2026 15:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -229,7 +229,7 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 Package: babel 2024/01/07 v24.1 The Babel package
 \babel@savecnt=\count274
 \U@D=\dimen148
-\l@unhyphenated=\language89
+\l@unhyphenated=\language42
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
@@ -237,12 +237,16 @@ Package: babel 2024/01/07 v24.1 The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language14). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language14). Reported on input line 108.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
 File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
@@ -521,88 +525,87 @@ LaTeX Font Warning: Font shape `T2A/lmr/m/n' undefined
 <<t2a.cmap>>
 LaTeX Info: Redefining \th on input line 16.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-4.
+9.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-4.
+9.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )<<oml.cmap>>
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-24.
+29.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )<<oms.cmap>>
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-24.
+29.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 24.
+(Font)              <10> on input line 29.
 <<omx.cmap>>
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 24.
+(Font)              <7> on input line 29.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 24.
+(Font)              <5> on input line 29.
 
 
 LaTeX Font Warning: Font shape `T2A/lmr/bx/n' undefined
-(Font)              using `T2A/lmr/m/n' instead on input line 24.
+(Font)              using `T2A/lmr/m/n' instead on input line 29.
 
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-4.
+9.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
 
-Overfull \hbox (16.02951pt too wide) in paragraph at lines 39--40
+Overfull \hbox (16.02951pt too wide) in paragraph at lines 44--45
 []\T2A/lmr/bx/n/10 PhD (unfinished). Advisor: Dr. Anupam Datta, PhD thesis: ``R
 epresentation-aware accounting
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--44
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
-dvips/cm-super/cm-super-t2a.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc
-}]
-Overfull \hbox (12.24948pt too wide) in paragraph at lines 127--129
+dvips/lm/lm-ts1.enc}]
+Overfull \hbox (12.24948pt too wide) in paragraph at lines 131--133
 \T2A/lmr/bx/n/10 Languages: Python, C. Topics: syntax, basic algorithms with li
 sts and strings (Python), developing
  []
 
 LaTeX Font Info:    Trying to load font information for T2A+lmtt on input line 
-147.
-LaTeX Font Info:    No file T2Almtt.fd. on input line 147.
+151.
+LaTeX Font Info:    No file T2Almtt.fd. on input line 151.
 
 LaTeX Font Warning: Font shape `T2A/lmtt/m/n' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 147.
+(Font)              using `T2A/cmr/m/n' instead on input line 151.
 
 
-Overfull \hbox (9.66678pt too wide) in paragraph at lines 149--151
+Overfull \hbox (9.66678pt too wide) in paragraph at lines 153--155
 []\T2A/lmr/bx/n/10 Erdogmus, H. et al (2015) Opportunities, Options, and Enhanc
 ements for the Wireless Emergency
  []
 
 
 LaTeX Font Warning: Font shape `T2A/lmr/m/it' undefined
-(Font)              using `T2A/lmr/m/n' instead on input line 151.
+(Font)              using `T2A/lmr/m/n' instead on input line 155.
 
-[2]
+[2] [3]
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -613,20 +616,21 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 9661 strings out of 474222
- 151352 string characters out of 5748733
- 1938975 words of memory out of 5000000
- 31782 multiletter control sequences out of 15000+600000
+ 9663 strings out of 475062
+ 151362 string characters out of 5770014
+ 1937975 words of memory out of 5000000
+ 31580 multiletter control sequences out of 15000+600000
  575602 words of font info for 52 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 75i,8n,79p,529b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-frm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on resume_kovaleva.pdf (2 pages, 77778 bytes).
+ 766 hyphenation exceptions out of 8191
+ 75i,8n,79p,504b,549s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/kosonya/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm0700.600
+pk> </home/kosonya/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.60
+0pk> </home/kosonya/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.6
+00pk></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb>
+Output written on resume_kovaleva.pdf (3 pages, 59578 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
  25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
