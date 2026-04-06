@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.6)  6 APR 2026 15:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.6)  6 APR 2026 15:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -627,7 +627,7 @@ Here is how much of TeX's memory you used:
 pk> </home/kosonya/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.60
 0pk> </home/kosonya/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.6
 00pk></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb>
-Output written on resume_kovaleva.pdf (3 pages, 59578 bytes).
+Output written on resume_kovaleva.pdf (3 pages, 59575 bytes).
 PDF statistics:
  146 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
