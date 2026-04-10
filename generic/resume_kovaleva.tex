@@ -88,17 +88,78 @@
 
 % Match left edge of overlapped \section titles (body column minus \sectionwidth).
 \noindent\hspace{-\sectionwidth}%
+{\large
 \begin{tabular*}{\dimexpr\textwidth+\sectionwidth\relax}{@{}l@{\extracolsep{\fill}}r@{}}
 	Mountain View, CA & Phone: \href{tel:+13024154176}{(302) 415-4176} \\
 	GitHub: \href{https://github.com/kosonya/}{github.com/kosonya} &
 	LinkedIn: \href{https://www.linkedin.com/in/sophia-kovaleva-1a664a3b/}{linkedin.com/in/sophia-kovaleva-1a664a3b} \\
 	\multicolumn{2}{@{}l@{}}{Google Scholar: \href{https://scholar.google.com/citations?user=\_rIRAXMAAAAJ}{scholar.google.com/citations?user=\_rIRAXMAAAAJ}} \\
 \end{tabular*}%
+}%
 
 \section{SUMMARY}
 
-Senior privacy engineer, ML researcher, data scientist, with 15+ years of experience in research and development, and 6 years of protecting 3 billion Android users from privacy threats. Left CMU PhD program to focus on high-impact industry work. Looking for a role where my diverse skills will shine.
+Senior privacy engineer, ML researcher, data scientist, with 15+ years of experience in research and development, and 6 years of protecting 3 billion Android users from privacy threats. Left CMU PhD program to focus on high-impact industry work. Now looking for engineering or research oriented roles in funded startups or companies with a strong mission, where privacy, ML, and doing the right thing matter.
 
+\section{EXPERIENCE}
+
+\ExperienceHeader{Spring 2025 -- now}{}{Sabbatical, exploring early startup ideas in AI kitchen automation}
+
+\ExperienceHeader{Spring 2019 -- Spring 2025}{Senior Privacy Engineer}{Google, Mountain View, CA}
+\begin{itemize}
+	\item
+		Ensured the privacy of over 3 billion Android users.
+	\item
+		Led the effort to modify the accelerometer API to mitigate the ``Gyrophone'' eavesdropping attack.
+	\item
+		Was the primary reviewer for the Android Vulnerability Reward Program reports. Built analytics pipelines to improve the throughput of VRP reviews enough to be the sole privacy reviewer.
+	\item
+		Worked with software engineers and led long-term privacy improvements in on-device intelligence, federated analytics, at-risk users privacy, and protection against coercive attacks. Did pre-launch reviews of features and consulted product teams on best privacy practices.
+	\item
+		Improved privacy policies and practices for end-to-end encryption, Nearby Share, preloaded apps, notice and consent.
+	\item
+		Built internal data analytics pipelines to identify problematic data collection and use practices, cross-link them to the responsible pieces of code, and work with the teams to fix them.
+	\item
+		Started and drove long-term R\&D initiatives in the areas of E2EE voice calling and key management systems for file-based encryption.
+	\item
+		Managed one direct report.
+\end{itemize}
+
+\ExperienceHeader{Fall 2013 -- Spring 2019}{PhD Student / Research Assistant}{Carnegie Mellon University, Moffett Field, CA}
+\begin{itemize}
+	\item
+		Improving Wireless Emergency Alerts -- building a data pipeline from Twitter to do sentiment analysis of people's reactions to WEAs. Developed a mobile app to collect data in the field and test various improved geofencing techniques.
+	\item
+		Room Occupancy Detection in SmartSpace -- using data from wall-mounted physical sensors to estimate the presence and the number of people in rooms.
+	\item
+		Wireless communication set-up for RSSI broadcast -- estimating3D radiation pattens of cellular antennae by interpolating RSSI data collected by a drone-based platform.
+	\item
+		Considerate systems -- estimating the speaking patterns in video conference calls and nudging the participants to be more considerate of each other.
+	\item
+		Explaining recommender systems -- building a matrix factorization recommender system with public Netflix data and a supervised learning model to explain the recommendations.
+\end{itemize}
+
+\ExperienceHeader{Summer 2015}{Data Science Intern}{Zugata, Inc., Palo Alto, CA}
+\begin{itemize}
+	\item
+		The only data scientist on the team of 5 people. Led the strategy and direction of analytics and interviewed candidates for the data science role.
+	\item
+		Built an end-to-end pipeline for collecting metadata about internal corporate communications, building a social graph of the company, and making suggestions for asking people for peer feedback.
+	\item
+		Used PostgreSQL, Redis, Python, Django, Nginx, and D3.js to collect the communications, analyze them, serve peer feedback nudges through a REST API, and visualize the social graph in a web application.
+\end{itemize}
+
+
+\ExperienceHeader{Fall 2010 -- June 2013}{Technician / TA}{MIEM / MIEM HSE, Moscow, Russia}
+\begin{itemize}
+	\item
+		As a sophomore volunteer, developed a curriculum and started teaching some of the lectures for a programming class to freshmen. By third year was formally hired and largely responsible for most of the teaching and curriculum.
+	\item
+		Developed curriculum and taught C and Python programming classes for freshmen and sophomores.
+	\item
+		Started my research project: ML-enabled tracking of public transit vehicles. Built an end-to-end pipeline for collecting the data with and SBC, storing it in a database, training an ML model on it, and displaying the data in an Android app. Received multiple awards and research grants for my work, even as an undergrad.
+\end{itemize}
+ 
 \section{EDUCATION}
 \begin{itemize}
 	\item
@@ -107,7 +168,7 @@ Senior privacy engineer, ML researcher, data scientist, with 15+ years of experi
 			\item
 				Master of Science in Electrical and Computer Engineering
 			\item
-				PhD (All But Dissertation, unfinished). Advisor: Dr. Anupam Datta, PhD thesis: ``Representation-aware accounting of machine learning models''.
+				PhD (coursework completed, left before defending). Advisor: Dr. Anupam Datta, PhD thesis: ``Representation-aware accounting of machine learning models''.
 		\end{itemize}
 	\item
 		National Research University HSE MIEM, September 2007 -- June 2012\\
@@ -131,68 +192,10 @@ Senior privacy engineer, ML researcher, data scientist, with 15+ years of experi
 	\item
 		Embedded systems (AVR, ARM), wireless communication, geolocation, sensor fusion, and mobile device security.
 	\item
-		General knowledge of GNU/Linux, networking, Docker, agentic AI, and LLMs. General interest in molecular biology and neuroscience.
+		Experience with GNU/Linux, networking, Docker, agentic AI, LLMs, computational biology.
 \end{itemize}
  
-\section{EXPERIENCE}
 
-\ExperienceHeader{Spring 2025 -- now}{}{Sabbatical, exploring early startup ideas}
-
-\ExperienceHeader{Spring 2019 -- Spring 2025}{Senior Privacy Engineer}{Google, Mountain View, CA}
-\begin{itemize}
-	\item
-		Conducted pre-launch privacy reviews for Android features being rolled out to over 3 billion users.
-	\item
-		Led the effort to modify the accelerometer API to mitigate the ``Gyrophone'' eavesdropping attack.
-	\item
-		Worked with product teams and led long-term privacy improvements in on-device intelligence, federated analytics, at-risk users privacy, and protection against coercive attacks.
-	\item
-		Drove improvements in the privacy policies and practices for end-to-end encryption, Nearby Share, preloaded apps, notice and consent.
-	\item
-		Built internal data analytics pipelines to identify problematic data collection and use practices, cross-link them to the responsible pieces of code, and work with the teams to fix them.
-	\item
-		Was the primary reviewer for the Android Vulnerability Reward Program reports. I built data analytics pipelines to identify inefficiencies in the internal review processes and led the effort to amend them accordingly.
-	\item
-		Started and drove long-term R\&D initiatives in the areas of E2EE voice calling and better key management systems for file-based encryption.
-	\item
-		Managed one direct report.
-\end{itemize}
-
-\ExperienceHeader{Fall 2013 -- Spring 2019}{PhD Student / Research Assistant}{Carnegie Mellon University, Moffett Field, CA}
-\begin{itemize}
-	\item
-		Improving Wireless Emergency Alerts -- building a data pipeline from Twitter to do sentiment analysis of people's reactions to WEAs. I developed a mobile app to collect data in the field and test various improved geofencing techniques.
-	\item
-		Room Occupancy Detection in SmartSpace -- using data from wall-mounted physical sensors to estimate the presence and the number of people in rooms.
-	\item
-		Wireless communication set-up for RSSI broadcast -- estimating3D radiation pattens of cellular antennae by interpolating RSSI data collected by a drone-based platform.
-	\item
-		Considerate systems -- estimating the speaking patterns in video conference calls and nudging the participants to be more considerate of each other.
-	\item
-		Explaining recommender systems -- building a matrix factorization recommender system with public Netflix data and a supervised learning model to explain the recommendations.
-\end{itemize}
-
-\ExperienceHeader{Summer 2015}{Data Science Intern}{Zugata, Inc., Palo Alto, CA}
-\begin{itemize}
-	\item
-		I was the only data scientist on the team of 5 people. I took leadership in developing the strategy and direction of analytics and interviewed candidates for the data science role.
-	\item
-		Built an end-to-end pipeline for collecting metadata about internal corporate communications, building a social graph of the company, and making suggestions for asking people for peer feedback.
-	\item
-		Used PostgreSQL, Redis, Python, Django, Nginx, and D3.js to collect the communications, analyze them, serve peer feedback nudges through a REST API, and visualize the social graph in a web application.
-\end{itemize}
-
-
-\ExperienceHeader{Fall 2010 -- June 2013}{Technician / TA}{MIEM / MIEM HSE, Moscow, Russia}
-\begin{itemize}
-	\item
-		As a sophomore volunteer, developed a curriculum and started teaching some of the lectures for a programming class to freshmen. By my third year, when I was formally hired, I was largely responsible for most of the teaching and curriculum.
-	\item
-		Developed curriculum and taught C and Python programming classes for freshmen and sophomores.
-	\item
-		I started my research project: ML-enabled tracking of public transit vehicles. I built an end-to-end pipeline for collecting the data with and SBC, storing it in a database, training an ML model on it, and displaying the data in an Android app. I received multiple awards and research grants for my work, even as an undergrad.
-\end{itemize}
- 
 %\section{PUBLICATIONS}
 %\begin{itemize}
 %	\item
