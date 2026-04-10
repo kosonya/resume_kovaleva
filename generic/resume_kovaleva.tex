@@ -6,46 +6,111 @@
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
 
-\usepackage{hyperref}
-\usepackage[T1]{fontenc}
+% Colored links avoid PDF link rectangles that sit on top of the header rule.
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=black]{hyperref}
+\usepackage{fancyhdr}
+% T2A + T1: Cyrillic (Russian) and Latin; last listed encoding (T1) is the default.
+\usepackage[T2A,T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{cmap}
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
+% Cyrillic (UTF-8): use \foreignlanguage{russian}{...} or
+% {\selectlanguage{russian}...\selectlanguage{english}} so LaTeX switches to T2A fonts.
+\usepackage{needspace}
 
-\begin{document} 
+% Tighter page margins; widen \resumewidth so text still fits between margins.
+% Narrower section-title column (default overlapped style was 0.5in).
+\makeatletter
+\addtolength{\topmargin}{-30pt}
+\addtolength{\textheight}{30pt}
+\addtolength{\oddsidemargin}{-24pt}
+\addtolength{\evensidemargin}{-24pt}
+\advance\resumewidth by 48pt
+\newsectionwidth{0.33in}
+\setlength{\headwidth}{\resumewidth}
+% fancyhdr: \fancyheadoffset[OL]{L} sets head width to \textwidth+L (here L=\sectionwidth
+% = \resumewidth) and inserts \hskip-L so the header moves left by \sectionwidth, matching
+% overlapped \section titles (res.cls sets \hoffset=\sectionwidth).
+\fancyheadoffset[OL]{\sectionwidth}
+% res.cls default is 3.5ex plus 1ex minus .2ex before each \section.
+\sectionskip=2ex plus 0.35ex minus 0.12ex
+\makeatother
 
-\name{Sophia Kovaleva\\[12pt]}     % the \\[12pt] adds a blank
-				        % line after name      
-
-\address{Phone: (302) 415-4176\\
-		Email: \href{mailto:sophia.m.kovaleva@gmail.com}{sophia.m.kovaleva@gmail.com}\\
-		GitHub: \href{https://github.com/kosonya/}{https://github.com/kosonya/}\\
-		LinkedIn: \href{https://www.linkedin.com/in/sophia-kovaleva-1a664a3b//}{https://www.linkedin.com/in/sophia-kovaleva-1a664a3b/}\\
-		Mountain View, CA
+% Running header (res.cls sets \headheight and \headsep to 0).
+\setlength{\headheight}{29pt}
+\setlength{\headsep}{4pt}
+\addtolength{\textheight}{-\dimexpr\headheight+\headsep\relax}
+\newcommand{\ResumeHeaderLeft}{\Large\bfseries Sophia Kovaleva}
+\newcommand{\ResumeHeaderCenter}{Privacy, AI/ML, data science}
+\newcommand{\ResumeHeaderRight}{\href{mailto:sophia.m.kovaleva@gmail.com}{sophia.m.kovaleva@gmail.com}}
+\fancyhf{}
+\fancyhead[L]{\ResumeHeaderLeft}
+\fancyhead[C]{\ResumeHeaderCenter}
+\fancyhead[R]{\ResumeHeaderRight}
+\renewcommand{\headrulewidth}{0.4pt}
+% Double rule across full \headwidth (= \resumewidth, i.e.\ body + section gutter).
+\renewcommand{\headrule}{%
+  \begingroup
+  \nointerlineskip
+  \hrule height \headrulewidth width \headwidth\relax
+  \kern 0.9pt
+  \hrule height \headrulewidth width \headwidth\relax
+  \endgroup
+}
+\fancyfoot{}
+\pagestyle{fancy}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[L]{\ResumeHeaderLeft}%
+  \fancyhead[C]{\ResumeHeaderCenter}%
+  \fancyhead[R]{\ResumeHeaderRight}%
+  \renewcommand{\headrulewidth}{0.4pt}%
+  \fancyfoot{}%
 }
 
+% One-line job header: dates left, title centered, company/location right; rule below.
+% Keep header with the following text/list (\Needspace + \nopagebreak).
+\newcommand{\ExperienceHeader}[3]{%
+  \Needspace{9\baselineskip}%
+  \par\vspace{0.35ex}%
+  \noindent
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r@{}}
+    #1 & \textbf{#2} & #3 \\[-0.2ex]
+    \hline
+  \end{tabular*}%
+  \par\nopagebreak[4]\vspace{0.35ex}\nopagebreak[4]%
+}
 
+\begin{document} 
 \begin{resume}
+\vspace{-20pt}% gap below header / after opening; res.cls uses \parskip between blocks
+
+% Match left edge of overlapped \section titles (body column minus \sectionwidth).
+\noindent\hspace{-\sectionwidth}%
+\begin{tabular*}{\dimexpr\textwidth+\sectionwidth\relax}{@{}l@{\extracolsep{\fill}}r@{}}
+	Mountain View, CA & Phone: \href{tel:+13024154176}{(302) 415-4176} \\
+	GitHub: \href{https://github.com/kosonya/}{github.com/kosonya} &
+	LinkedIn: \href{https://www.linkedin.com/in/sophia-kovaleva-1a664a3b/}{linkedin.com/in/sophia-kovaleva-1a664a3b} \\
+\end{tabular*}%
 
 \section{SUMMARY}
 
-Looking for: privacy, ML, interpretability, data science, software engineering.\\
-Experience: privacy engineering for Android at Google, ML transparency at Carnegie Mellon, data science at Zugata.
+Senior privacy engineer, ML researcher, data scientist, with 15+ years of experience in research and development. Left CMU PhD program to focus on high-impact industry work. Looking for opportunities to apply my diverse skills in a high-impact role.
 
 \section{EDUCATION}
 \begin{itemize}
 	\item
-		\underline{Carnegie Mellon University Silicon Valley Campus, July 2013 -- February 2019}\\
+		\underline{Carnegie Mellon University, July 2013 -- February 2019}
 		\begin{itemize}
 			\item
 				Master of Science in Electrical and Computer Engineering
 			\item
-				PhD (unfinished). Advisor: Dr. Anupam Datta, PhD thesis: ``Representation-aware accounting of machine learning models''.
+				PhD (All But Dissertation, unfinished). Advisor: Dr. Anupam Datta, PhD thesis: ``Representation-aware accounting of machine learning models''.
 		\end{itemize}
 	\item
-		National Research University Higher School of Economics | MIEM, September 2007 -- June 2012\\
-		Bachelor of Science (Engineer) in Computer Science\\
+		National Research University HSE MIEM, September 2007 -- June 2012\\
+		Bachelor of Science (Engineer) in Computer Science
 \end{itemize}
 
 \section{SKILLS}          
@@ -53,97 +118,82 @@ Experience: privacy engineering for Android at Google, ML transparency at Carneg
 	\item
 		Primary programming language: Python.
 	\item
-		Secondary programming languages: Java, SQL, C++, JS, Haskell, MATLAB, Fortran, \LaTeX{}.
+		Secondary: Java, SQL, C, C++, JavaScript, Haskell, Prolog, MATLAB, Fortran, \LaTeX{}.
 	\item
-		Building machine learning systems with TensorFlow, Apache Spark, scikit-learn, NumPy.
+		Building ML systems and data pipelines with TensorFlow, Apache Spark, scikit-learn, NumPy, Jupyter, Django, PostgreSQL, Redis.
 	\item
-		Data visualization with matplotlib, GNU Octave, D3.js + Django REST.
+		Data visualization with matplotlib, GNU Octave, D3.js.
 	\item
 		Analysis of privacy risks on mobile devices, especially against local attacks against at-risk users.
 	\item
-		Embedded systems (AVR, ARM), wireless communication.
+		Data anonymization, differential privacy, analysis of code, logs, and technical documentation for privacy risks.
+	\item
+		Embedded systems (AVR, ARM), wireless communication, geolocation, sensor fusion, and mobile device security.
+	\item
+		General knowledge of GNU/Linux, networking, Docker, agentic AI, and LLMs. General interest in molecular biology and neuroscience.
 \end{itemize}
  
 \section{EXPERIENCE}
 
-\vspace{-0.1in}	
-\begin{tabbing}
-\hspace{2in}\= \hspace{2in}\= \kill % set up two tab positions
-{\bf Senior Privacy Engineer} \>Google \>Spring 2019 -- Spring 2025\\
-			\>Mountain View, CA \> 
-\end{tabbing}      % suppress blank line after tabbing
-Duties and projects:
+\ExperienceHeader{Spring 2025 -- now}{}{Sabbatical, exploring early startup ideas}
+
+\ExperienceHeader{Spring 2019 -- Spring 2025}{Senior Privacy Engineer}{Google, Mountain View, CA}
 \begin{itemize}
 	\item
-		Leading the privacy reviews of the Android Vulnerability Reward Program reports.
+		I conducted pre-launch privacy reviews for Android features being rolled out to over 3 billion users. I formed long-term relationships with product teams and drove strategic long-term privacy improvement initiatives, particularly in the areas of on-device intelligence, federated analytics, at-risk users privacy, and protection against coercive attacks.
 	\item
-		Driving strategic long-term privacy improvement initiatives.
+		I drove strategic initiatives to amend privacy policies and practices in the areas of end-to-end encryption, Nearby Share, preloaded apps, notice and consent.
 	\item
-		Analyzing backend data to find most problematic or promising areas for privacy improvement.
+		I led the effort to modify the accelerometer API to mitigate the ``Gyrophone'' eavesdropping attack.
 	\item
-		Developing and proposing policy changes.
+		I built internal data analytics pipelines to identify problematic data collection and use practices, cross-link them to the responsible pieces of code, and work with the teams to fix them.
 	\item
-		Reviewing code for potential privacy issues and proposing improvements.
+		I was the primary reviewer for the Android Vulnerability Reward Program reports. I built data analytics pipelines to identify inefficiencies in the internal review processes and led the effort to amend them accordindly.
 	\item
-		Consulting, supervision, and review of Android features including Nearby Share and on-device intelligence.
+		I started and drove long-term R\&D initiaives in the areas of E2EE voice calling and better key management systems for file-based encryption.
 	\item
-		Driving the effort to limit the accelerometer sampling rate to prevent eavesdropping attacks.
-\item
-		Managing one direct report.
+		I managed one direct report.
 \end{itemize}
 
-\vspace{-0.1in}	
-\begin{tabbing}
-\hspace{2in}\= \hspace{2in}\= \kill % set up two tab positions
-{\bf PhD Student / RA} \>Carnegie Mellon University \>Fall 2013 -- Spring 2019\\
-			\>Moffett Field, CA \> 
-\end{tabbing}      % suppress blank line after tabbing
-Notable research projects:
+\ExperienceHeader{Fall 2013 -- Spring 2019}{PhD Student / Research Assistant}{Carnegie Mellon University, Moffett Field, CA}
 \begin{itemize}
 	\item
-		Room Occupancy Detection in SmartSpace -- using data from wall-mounted physical sensors to estimate the presence and the number of people in rooms.
+		Improving Wireless Emergency Alerts -- I built a data pipeline from Twitter to do sentiment analysis of people's reactions to WEAs. I developed a mobile app to collect data in the field and test various improved geofencing techniques.
 	\item
-		Indoor Positioning of Mobile Devices by Combined Wi-Fi and GPS Signals -- improving fingerprinting techniques for indoor positioning using continuous Bayesian classifier.
+		Room Occupancy Detection in SmartSpace -- I used data from wall-mounted physical sensors to estimate the presence and the number of people in rooms.
 	\item
-		Improving Wireless Emergency Alerts -- implementing location-based client-side filtering of broadcast emergency messages to mobile phones to reduce the number of irrelevant messages seen by users, and improve user experience.
+		Wireless communication set-up for RSSI broadcast -- I estimated 3D radiation pattens of cellular antennae by interpolating RSSI data collected by a drone-based platform.
 	\item
-		Wireless communication set-up for RSSI broadcast -- building 3D radiation pattens of cellular antennae by interpolating RSSI data collected by a drone-based platform.
+		Considerate systems -- I worked on a system for estimating the speaking patterns in video conference calls and nudging the participants to be more considerate of each other.
 	\item
-		Explaining matrix factorization recommender systems with supervised learning.
+		Explaining recommender systems -- I built a matrix factorization recommender system with public Netflix data and a supervised learning model to explain the recommendations.
 \end{itemize}
 
-\vspace{-0.1in}	
-\begin{tabbing}
-\hspace{2in}\= \hspace{2in}\= \kill % set up two tab positions
-{\bf Data Scienece Intern} \>Zugata, Inc. \>Summer 2015\\
-			\>Palo Alto, CA \> 
-\end{tabbing}      % suppress blank line after tabbing
-Building and analyzing corporate social graphs based on metadata about users' communications. I was the only data scientist on the team of 5 people. I was able to build a full stack application from scratch, including the backend and the frontend, drove the direction of the project, and worked on the data analysis and visualization.
-
-\vspace{-0.1in}	
-\begin{tabbing}
-\hspace{2in}\= \hspace{2in}\= \kill % set up two tab positions
-{\bf Technician / TA} \>MIEM / MIEM HSE \>Fall 2010 -- June 2013\\
-			\>Moscow, Russia \> (volunteered from 2008)
-\end{tabbing}      % suppress blank line after tabbing
+\ExperienceHeader{Summer 2015}{Data Science Intern}{Zugata, Inc., Palo Alto, CA}
 \begin{itemize}
 	\item
-		Arranging materials and teaching some of the sessions of a programming class to freshmen. Languages: Python, C. Topics: syntax, basic algorithms with lists and strings (Python), developing 2D games using the PyGame library, basic algorithms with arrays, strings and matrices (C), dynamic memory allocation, linked lists, trees and graphs.
+		I was the only data scientist on the team of 5 people. I took learship in developing the strategy and direction of analytics and interviewed candidates for the data science role.
 	\item
-		Developing and teaching an applied programming class to sophomores. Language: Python. Topics: Python object model, basic functional programming, multiprocessing, socket network interface, GTK-based GUIs, databases and others.
+		I built an end-to-end pipeline for collecting medatata about internal corporate communications, building a social graph of the company, and making suggestions for asking people for peer feedback.
+	\item
+		I used PostgreSQL, Redis, Python, Django, Nginx, and D3.js to collect the communications, analyze them, serve peer feedback nudges through a REST API, and visualize the social graph in a web application.
 \end{itemize}
 
-\section{LANGUAGES SPOKEN}
-\begin{enumerate}
+
+\ExperienceHeader{Fall 2010 -- June 2013}{Technician / TA}{MIEM / MIEM HSE, Moscow, Russia}
+\begin{itemize}
 	\item
-		Russian (native);
+		As a sophomore, I started volunteering to develop a curriculum and started teaching some of the lectures for a programming class to freshmen. By my third year, when I was formally hired, I was largely responsible for most of the teaching and curriculum.
 	\item
-		English (Fluent);
+		I developed curriculum for the intro C programming class.\\
+		(see \href{https://web.archive.org/web/20130414102421mp_/http://wiki.auditory.ru/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%AF%D0%B7%D1%8B%D0%BA_%D0%A1%D0%B8}{https://web.archive.org/web/20130414102421mp\_/http://wiki.auditory.ru/Категория:Язык\_Си}).
 	\item
-		Japanese (Basic);
+		I later switched the curriculum to Pythong and programming 2D games in pygame, and then switching to C and SDL in the next semester.
 	\item
-		French (basic).
-\end{enumerate}
+		I developed an taught an applied programming class to sophomores. Language: Python. Topics: Python object model, basic functional programming, multiprocessing, socket network interface, GTK-based GUIs, databases and others.
+	\item
+		I started my research project: ML-enabled tracking of public transit vehicles. I built an end-to-end pipeline for collecting the data with and SBC, storing it in a database, training an ML model on it, and displaying the data in an Android app. I received multiple awards and research grants for my work, even as an undergrad.
+\end{itemize}
  
 \section{PUBLICATIONS}
 \begin{itemize}
