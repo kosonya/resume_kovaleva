@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.6)  9 APR 2026 20:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.6)  9 APR 2026 20:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -604,11 +604,11 @@ LaTeX Font Warning: Font shape `T2A/lmr/bx/n' undefined
 (Font)              using `T2A/lmr/m/n' instead on input line 86.
 
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-04.
+05.
 (c:/texlive/2026/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (1.9515pt too wide) in paragraph at lines 153--155
+Overfull \hbox (1.9515pt too wide) in paragraph at lines 154--156
 \T2A/lmr/bx/n/10 pipelines to identify inefficiencies in the internal review pr
 ocesses and led the effort to amend them accordingly. 
  []
@@ -617,17 +617,10 @@ ocesses and led the effort to amend them accordingly.
 6/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}
 
 {c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-LaTeX Font Info:    Trying to load font information for T2A+lmtt on input line 
-203.
-LaTeX Font Info:    No file T2Almtt.fd. on input line 203.
-
-
-LaTeX Font Warning: Font shape `T2A/lmtt/m/n' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 203.
-
-
-LaTeX Font Warning: Font shape `T2A/lmr/m/it' undefined
-(Font)              using `T2A/lmr/m/n' instead on input line 207.
+Overfull \hbox (3.72885pt too wide) in paragraph at lines 189--191
+[]\T2A/lmr/bx/n/10 As a sophomore volunteer, developed a curriculum and started
+ teaching some of the lectures for a programming
+ []
 
 [2]
  ***********
@@ -640,21 +633,21 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 10895 strings out of 467349
- 172567 string characters out of 5419857
+ 10883 strings out of 467349
+ 172398 string characters out of 5419857
  602156 words of memory out of 5000000
- 39830 multiletter control sequences out of 15000+600000
+ 39819 multiletter control sequences out of 15000+600000
  646060 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,505b,510s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,487b,510s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2026/
 texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2026/texmf-dist
 /fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2026/texmf-dist/fonts/typ
 e1/public/cm-super/sfrm1440.pfb>
-Output written on resume_kovaleva.pdf (2 pages, 74522 bytes).
+Output written on resume_kovaleva.pdf (2 pages, 70342 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
  25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
